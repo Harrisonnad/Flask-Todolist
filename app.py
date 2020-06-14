@@ -23,7 +23,7 @@ def index():
         new_todo = Todo(content=task_content)
 
         try:
-            db.session.add(new_task)
+            db.session.add(new_todo)
             db.session.commit()
             return redirect('/')
         except:
